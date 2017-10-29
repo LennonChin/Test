@@ -53,7 +53,6 @@ body {
 
 /* 头部 */
 #header {
-	height: 200px;
 	background-color: #f0f0f0;
 }
 
@@ -100,22 +99,151 @@ body {
 	display: block;
 }
 
-#header .icon-icon {
-	font-size: 50px;
+#main_ad {
+
 }
 
-#header .icon-logo {
-	font-size: 36px;
+#main_ad > .carousel-inner > .item {
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+
+	#main_ad > .carousel-inner > .item {
+		height: 410px;
+	}
+	
+}
+
+#main_ad > .carousel-inner > .item > img {
+	width: 100%;
+}
+
+/**
+ * 特色
+ */
+/*#special > .container > .row > div {
+	height: 50px;
+	background-color: #f40;
+} 
+
+#special > .container > .row > div:nth-child(2n) {
+	height: 50px;
+	background-color: #fff;
+} */
+
+#special {
+	padding: 50px 0 0 0;
+	border-bottom: 1px solid #eee;
+}
+
+#special > .container > .row > div {
+	height: 50px;
+	margin-bottom: 50px;
+}
+
+#special > .container > .row > div > a {
+	text-decoration: none;
+	color: #666;
+}
+
+#special > .container > .row > div > a:hover {
+	color: #E9232C;
+}
+
+.icon-uniE907:before {
+  content: "\e907";
+}
+
+#special i {
+	font-size: 32px;
+}
+
+/* 立即预约 */
+#order {
+	padding: 25px 0;
+	border-bottom: 1px solid #eee;
+}
+
+#order > .container > p {
+	/*line-height: 50px;*/
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+#order > .container > p > span,
+#order > .container > p > a {
+	color: #e92322;
+}
+
+#order > .container > p > a {
+	border-bottom: 1px dashed #e92322;
+}
+
+#order > .container > p > a:hover {
+	text-decoration: none;
+}
+
+.icon-uniE906:before {
+	content: '\e906';
+}
+
+.icon-uniE905:before {
+	content: '\e905';
+}
+
+#products {
+	padding: 40px 0;
+}
+
+#products > .container > .nav-tabs {
+	padding-left: 20px;
+}
+
+#products > .container > .nav-tabs > li {
+
+}
+
+#products > .container > .nav-tabs > li > a {
+	
+	font-size: 15px;
+	color: #333;
+}
+
+#products > .container > .nav-tabs > li > a:hover {
+	background-color: transparent;	
+	border: none;
+	border-bottom: 4px solid #e92322;
+	color: #000;
+}
+
+#products > .container > .nav-tabs > li.active {
+
+}
+
+#products > .container > .nav-tabs > li.active > a {
+	
+	background-color: transparent;	
+	border: none;
+	border-bottom: 4px solid #e92322;
+}
+
+#products > .container > .tab-content {
+	padding: 20px 0;
+}
+
+#products > .container > .tab-content p {
+	margin-bottom: 0;
 }
 
 section {
-	height: 200px;
-	background-color: #fff;
 }
 
 /* nth-child是有区别的 */
 section:nth-of-type(2n) {
-	background-color: #ddd;
 }
 
 

@@ -49,6 +49,7 @@ fieldset[disabled] .btn-register.active {
   background-color: #fff;
   border-color: #f5f5f5;
   line-height: 80px;
+  margin-bottom: 0px;
 }
 .navbar-coderap .navbar-brand {
   color: #777;
@@ -148,4 +149,82 @@ fieldset[disabled] .navbar-coderap .btn-link:hover,
 .navbar-coderap .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-coderap .btn-link:focus {
   color: #ccc;
+}
+
+.panel-coderap {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px #ccc inset;
+  color: #fff;
+}
+
+.panel-coderap > .panel-heading {
+    position: relative;
+  color: #333;
+  background-color: transparent;
+  border: 0;
+  border-left: 1px dashed #fff;
+  float: right;
+  width: 120px;
+  padding: 0;
+  height: 150px;
+  text-align: center;
+}
+
+.panel-coderap > .panel-heading::before {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    box-shadow: 0px -1px 1px #ddd inset;
+}
+
+.panel-coderap.active {
+    background-color: #e92322;
+}
+
+.panel-coderap.active::before {
+    content: '\e915';
+    font-family: 'coderap';
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: -6px;
+    left: 15px;
+}
+
+.panel-coderap.disabled {
+    background-color: #e0e0e0;
+}
+
+.panel-coderap > .panel-heading::after {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    box-shadow: 0px 1px 1px #ddd inset;
+}
+
+.panel-coderap > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-coderap > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+
+.panel-coderap > .panel-body {
+    margin-right: 120px;
+    height: 150px;
+}
+.panel-coderap > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
 }
