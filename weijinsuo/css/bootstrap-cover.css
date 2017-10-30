@@ -50,6 +50,8 @@ fieldset[disabled] .btn-register.active {
   border-color: #f5f5f5;
   line-height: 80px;
   margin-bottom: 0px;
+  top: 0;
+  width: 100%;
 }
 .navbar-coderap .navbar-brand {
   color: #777;
@@ -166,7 +168,7 @@ fieldset[disabled] .navbar-coderap .btn-link:focus {
   border-left: 1px dashed #fff;
   float: right;
   width: 120px;
-  padding: 0;
+  padding: 50px 0 0 0;
   height: 150px;
   text-align: center;
 }
@@ -182,6 +184,47 @@ fieldset[disabled] .navbar-coderap .btn-link:focus {
     left: -10px;
     box-shadow: 0px -1px 1px #ddd inset;
 }
+
+.panel-coderap > .panel-heading > .tooltips {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 20px;
+}
+
+.panel-coderap > .panel-heading > p {
+  color: #fff;
+
+}
+
+.panel-coderap > .panel-heading > p > strong {
+  font-size: 30px;
+}
+
+
+.panel-coderap > .panel-heading .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fff;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.panel-coderap > .panel-heading .badge-one {
+  color: #e92322;
+  border-color: #e92322;
+}
+
+.panel-coderap > .panel-heading .badge-two {
+  
+  color: #399;
+  border-color: #399;
+}
+
 
 .panel-coderap.active {
     background-color: #e92322;
@@ -215,10 +258,6 @@ fieldset[disabled] .navbar-coderap .btn-link:focus {
 
 .panel-coderap > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ddd;
-}
-.panel-coderap > .panel-heading .badge {
-  color: #f5f5f5;
-  background-color: #333;
 }
 
 .panel-coderap > .panel-body {

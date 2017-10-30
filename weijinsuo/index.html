@@ -46,12 +46,12 @@
 						</div>
 						<div class="col-md-3 text-center">
 							<a class="btn btn-register btn-sm">免费注册</a>
-							<a class="btn btn-link btn-sm">登录</a>
+							<a class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModal">登录</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<nav class="navbar navbar-coderap navbar-static-top">
+			<nav class="navbar navbar-coderap navbar-static-top" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-list" aria-expanded="false">
@@ -209,31 +209,33 @@
 		<section id="products">
 			<div class="container">
 				<!-- Nav tabs -->
-				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active">
-						<a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">特别推荐</a></li>
-						<li role="presentation">
-							<a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">微投资</a>
-						</li>
-						<li role="presentation">
-							<a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">微小宝</a>
-						</li>
-						<li role="presentation">
-							<a href="#tab_04" aria-controls="tab_04" role="tab" data-toggle="tab">微消费</a>
-						</li>
-						<li role="presentation">
-							<a href="#tab_05" aria-controls="tab_05" role="tab" data-toggle="tab">微增利</a>
-						</li>
-						<li role="presentation">
-							<a href="#tab_06" aria-controls="tab_05" role="tab" data-toggle="tab">微金宝</a>
-						</li>
-						<li role="presentation">
-							<a href="#tab_07" aria-controls="tab_05" role="tab" data-toggle="tab">微转让</a>
-						</li>
-						<li role="presentation" class="pull-right">
-							<a href="#tab_07" aria-controls="tab_05" role="tab" data-toggle="tab">更多</a>
-						</li>
-					</ul>
+				<div class="ul-wrapper">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">特别推荐</a></li>
+							<li role="presentation">
+								<a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">微投资</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">微小宝</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab_04" aria-controls="tab_04" role="tab" data-toggle="tab">微消费</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab_05" aria-controls="tab_05" role="tab" data-toggle="tab">微增利</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab_06" aria-controls="tab_05" role="tab" data-toggle="tab">微金宝</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab_07" aria-controls="tab_05" role="tab" data-toggle="tab">微转让</a>
+							</li>
+							<li role="presentation" class="pull-right">
+								<a href="#tab_07" aria-controls="tab_05" role="tab" data-toggle="tab">更多</a>
+							</li>
+						</ul>
+					</div>
 
 					<!-- Tab panes -->
 					<div class="tab-content">
@@ -241,7 +243,14 @@
 							<div class="row">
 								<div class="col-xs-12 col-sm-6 col-md-4">
 									<div class="panel panel-coderap active">
-										<div class="panel-heading">Panel heading without title</div>
+										<div class="panel-heading">
+											<p class="tooltips">
+												<a class="badge badge-one" href="" data-toggle="tooltip" data-placement="top" title="北京">京</a>
+												<a class="badge badge-two" href="" data-toggle="tooltip" data-placement="top" title="上海">沪</a>
+											</p>
+											<p><strong>8</strong><sub>%</sub></p>
+											<p><span>年利率</span></p>
+										</div>
 										<div class="panel-body">
 											<h4>新手体验标</h4>
 											<div class="row">
@@ -266,8 +275,15 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="panel panel-coderap disabled">
-										<div class="panel-heading">Panel heading without title</div>
+									<div class="panel panel-coderap active">
+										<div class="panel-heading">
+											<p class="tooltips">
+												<a class="badge badge-one" href="" data-toggle="tooltip" data-placement="top" title="北京">京</a>
+												<a class="badge badge-two" href="" data-toggle="tooltip" data-placement="top" title="上海">沪</a>
+											</p>
+											<p><strong>8</strong><sub>%</sub></p>
+											<p><span>年利率</span></p>
+										</div>
 										<div class="panel-body">
 											<h4>新手体验标</h4>
 											<div class="row">
@@ -292,8 +308,15 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="panel panel-coderap">
-										<div class="panel-heading">Panel heading without title</div>
+									<div class="panel panel-coderap active">
+										<div class="panel-heading">
+											<p class="tooltips">
+												<a class="badge badge-one" href="" data-toggle="tooltip" data-placement="top" title="北京">京</a>
+												<a class="badge badge-two" href="" data-toggle="tooltip" data-placement="top" title="上海">沪</a>
+											</p>
+											<p><strong>8</strong><sub>%</sub></p>
+											<p><span>年利率</span></p>
+										</div>
 										<div class="panel-body">
 											<h4>新手体验标</h4>
 											<div class="row">
@@ -318,8 +341,15 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="panel panel-coderap">
-										<div class="panel-heading">Panel heading without title</div>
+									<div class="panel panel-coderap active">
+										<div class="panel-heading">
+											<p class="tooltips">
+												<a class="badge badge-one" href="" data-toggle="tooltip" data-placement="top" title="北京">京</a>
+												<a class="badge badge-two" href="" data-toggle="tooltip" data-placement="top" title="上海">沪</a>
+											</p>
+											<p><strong>8</strong><sub>%</sub></p>
+											<p><span>年利率</span></p>
+										</div>
 										<div class="panel-body">
 											<h4>新手体验标</h4>
 											<div class="row">
@@ -344,8 +374,15 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="panel panel-coderap">
-										<div class="panel-heading">Panel heading without title</div>
+									<div class="panel panel-coderap active">
+										<div class="panel-heading">
+											<p class="tooltips">
+												<a class="badge badge-one" href="" data-toggle="tooltip" data-placement="top" title="北京">京</a>
+												<a class="badge badge-two" href="" data-toggle="tooltip" data-placement="top" title="上海">沪</a>
+											</p>
+											<p><strong>8</strong><sub>%</sub></p>
+											<p><span>年利率</span></p>
+										</div>
 										<div class="panel-body">
 											<h4>新手体验标</h4>
 											<div class="row">
@@ -370,8 +407,15 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="panel panel-coderap">
-										<div class="panel-heading">Panel heading without title</div>
+									<div class="panel panel-coderap active">
+										<div class="panel-heading">
+											<p class="tooltips">
+												<a class="badge badge-one" href="" data-toggle="tooltip" data-placement="top" title="北京">京</a>
+												<a class="badge badge-two" href="" data-toggle="tooltip" data-placement="top" title="上海">沪</a>
+											</p>
+											<p><strong>8</strong><sub>%</sub></p>
+											<p><span>年利率</span></p>
+										</div>
 										<div class="panel-body">
 											<h4>新手体验标</h4>
 											<div class="row">
@@ -408,17 +452,151 @@
 			</section>
 			<!-- /产品推荐 -->
 			<!-- 新闻列表 -->
-			<section></section>
-			<!-- /新闻列表 -->
-			<!-- 合作伙伴 -->
-			<section></section>
-			<!-- /合作伙伴 -->
-			<!-- 脚注区域 -->
-			<footer></footer>
-			<!-- /脚注区域 -->
+			<section id="news">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2 col-sm-offset-2">
+							<div class="new-title">
+								全部新闻
+							</div>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<ul class="nav nav-pills nav-stacked">
+								<li role="presentation" class="active"><a data-title="全部新闻" href="#news01" data-toggle="tab" role="tab"><i class="icon-news01"></i></a></li>
+								<li role="presentation"><a data-title="媒体新闻" href="#news02" data-toggle="tab" role="tab"><i class="icon-news02"></i></a></li>
+								<li role="presentation"><a data-title="行业资讯" href="#news03" data-toggle="tab" role="tab"><i class="icon-news03"></i></a></li>
+								<li role="presentation"><a data-title="其他" href="#news04" data-toggle="tab" role="tab"><i class="icon-news04"></i></a></li>
+							</div>
+							<div class="col-sm-5 col-md-6">
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane fade in" id="news01">
+										<ul>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+										</ul>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="news02">
 
-			<script src="lib/jquery/jquery.js"></script>
-			<script src="lib/bootstrap/js/bootstrap.js"></script>
-			<script src="js/main.js"></script>
-		</body>
-		</html>
+										<ul>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+										</ul>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="news03">
+										
+										<ul>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+										</ul>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="news04">
+										
+										<ul>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+											<li>全部新闻全部新闻全部新闻全部新闻全部新闻</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /新闻列表 -->
+				<!-- 合作伙伴 -->
+				<section id="partner">
+					<div class="container text-center">
+						<h3>合作伙伴</h3>
+						<ul class="center-block">
+							<li><a href=""><i class="icon-uniE930"></i></a></li>
+							<li><a href=""><i class="icon-uniE92F"></i></a></li>
+							<li><a href=""><i class="icon-uniE92E"></i></a></li>
+							<li><a href=""><i class="icon-uniE92A"></i></a></li>
+							<li><a href=""><i class="icon-uniE929"></i></a></li>
+							<li><a href=""><i class="icon-uniE931"></i></a></li>
+							<li><a href=""><i class="icon-uniE92C"></i></a></li>
+							<li><a href=""><i class="icon-uniE92B"></i></a></li>
+							<li><a href=""><i class="icon-uniE92D"></i></a></li>
+						</ul>
+					</div>
+				</section>
+				<!-- /合作伙伴 -->
+				<!-- 脚注区域 -->
+				<footer id="footer"></footer>
+				<!-- /脚注区域 -->
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">登录</h4>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputFile">File input</label>
+										<input type="file" id="exampleInputFile">
+										<p class="help-block">Example block-level help text here.</p>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> Check me out
+										</label>
+									</div>
+									<button type="submit" class="btn btn-default">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script src="lib/jquery/jquery.js"></script>
+				<script src="lib/bootstrap/js/bootstrap.js"></script>
+				<script src="js/main.js"></script>
+			</body>
+			</html>

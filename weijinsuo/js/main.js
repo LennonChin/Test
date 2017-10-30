@@ -29,4 +29,25 @@ $(function () {
 
 	$(window).on('resize', resize).trigger('resize');
 
+	$('[data-toggle="tooltip"]').tooltip();
+
+	var $ulContainer = $('.nav-tabs');
+	var width = 0;
+	$ulContainer.children().each(function(index, item) {
+		width += item.clientWidth;
+	});
+
+	if (width > $(window).width()) {
+		$ulContainer.css('width', width + 40).parent().css('overflow-x', 'scroll');
+	}
+
+	var $newTitle = $('.new-title');
+	$('#news .nav-pills a').on('click', function() {
+
+		var $this = $(this);
+		var title = $this.data('title');
+		$newTitle.text(title);
+
+	});
+
 });

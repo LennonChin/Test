@@ -199,32 +199,37 @@ body {
 	padding: 40px 0;
 }
 
-#products > .container > .nav-tabs {
+/*#products > .container > .ul-wrapper {
+
+	overflow-x: scroll;
+}*/
+
+#products > .container > .ul-wrapper > .nav-tabs {
 	padding-left: 20px;
 }
 
-#products > .container > .nav-tabs > li {
+#products > .container > .ul-wrapper > .nav-tabs > li {
 
 }
 
-#products > .container > .nav-tabs > li > a {
+#products > .container > .ul-wrapper > .nav-tabs > li > a {
 	
 	font-size: 15px;
 	color: #333;
 }
 
-#products > .container > .nav-tabs > li > a:hover {
+#products > .container > .ul-wrapper > .nav-tabs > li > a:hover {
 	background-color: transparent;	
 	border: none;
 	border-bottom: 4px solid #e92322;
 	color: #000;
 }
 
-#products > .container > .nav-tabs > li.active {
+#products > .container > .ul-wrapper > .nav-tabs > li.active {
 
 }
 
-#products > .container > .nav-tabs > li.active > a {
+#products > .container > .ul-wrapper > .nav-tabs > li.active > a {
 	
 	background-color: transparent;	
 	border: none;
@@ -239,6 +244,171 @@ body {
 	margin-bottom: 0;
 }
 
+#news {
+
+	padding: 50px;
+	border-bottom: 1px solid #c0c0c0;
+
+}
+
+#news .new-title {
+	padding: 15px 30px;
+	border-bottom: 1px dashed #ccc;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#news .new-title::after {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	border: 1px solid #c0c0c0;
+	position: absolute;
+	bottom: -5px;
+	right: 0;
+}
+
+#news .nav-pills a i {
+	font-size: 30px;
+}
+
+.icon-news01:before {
+  content: "\e90e";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news02:before {
+  content: "\e90f";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news03:before {
+  content: "\e910";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news04:before {
+  content: "\e911";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+@media (max-width: 768px) {
+	#news .nav-stacked > li {
+		float: left;
+		margin-right: 50px;
+	}
+}
+
+
+.icon-uniE930:hover {
+  color: #df3232;
+}
+
+.icon-uniE930:before {
+  content: "\e946";
+}
+
+.icon-uniE92F:hover {
+  color: #e8380d;
+}
+
+.icon-uniE92F:before {
+  content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+  color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+  content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+  color: #159f69;
+}
+
+.icon-uniE92A:before {
+  content: "\e92a";
+}
+
+.icon-uniE929:hover {
+  color: #07569e;
+}
+
+.icon-uniE929:before {
+  content: "\e929";
+}
+
+.icon-uniE931:hover {
+  color: #004098;
+}
+
+.icon-uniE931:before {
+  content: "\e931";
+}
+
+.icon-uniE92C:hover {
+  color: #d32019;
+}
+
+.icon-uniE92C:before {
+  content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+  color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+  content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+  color: #2bb289;
+}
+
+.icon-uniE92D:before {
+  content: "\e92d";
+}
+
+#partner {
+	padding: 30px 0;
+}
+
+#partner ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 1090px;
+}
+
+#partner ul li {
+	float: left;
+}
+
+#partner ul li + li {
+	border-left: 1px dashed #e0e0e0;
+}
+
+#partner ul li a {
+
+	font-size: 70px;
+	padding: 10px 25px;
+}
+
+#partner ul li a:hover {
+	text-decoration: none;
+}
+
+
 section {
 }
 
@@ -250,4 +420,5 @@ section:nth-of-type(2n) {
 /* 脚注 */
 #footer {
 
+	height: 200px;
 }
